@@ -61,9 +61,3 @@ function pipeSync(pipingFun) {
 
   return result;
 }
-
-pipeSync((p) => ([
-  "hello",
-  p.concat("!"),
-  (s) => s.toUpperCase()
-])); // returns "HELLO!"
